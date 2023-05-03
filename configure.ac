@@ -245,8 +245,6 @@ AC_MSG_CHECKING([whether to enable rolling-checksum SIMD optimizations])
 AC_ARG_ENABLE(roll-simd,
     AS_HELP_STRING([--enable-roll-simd],[enable/disable to control rolling-checksum SIMD optimizations (requires c++)]))
 
-# Clag is crashing with -g -O2, so we'll get rid of -g for now.
-CXXFLAGS=`echo "$CXXFLAGS" | sed 's/-g //'`
 m4_define(SIMD_X86_64_TEST, [[#include <stdio.h>
 #if HAVE_STDLIB_H
 #include <stdlib.h>

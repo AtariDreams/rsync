@@ -7215,8 +7215,6 @@ then :
 fi
 
 
-# Clag is crashing with -g -O2, so we'll get rid of -g for now.
-CXXFLAGS=`echo "$CXXFLAGS" | sed 's/-g //'`
 
 
 if test x"$enable_roll_simd" = x""; then
